@@ -1,0 +1,221 @@
+/* Ant Design bileşenlerinin üzerine yalnızca sayfa düzeni ve birkaç özel stil eklenir. */
+
+body {
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Üst çubuk */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: auto;
+  padding: 4px 8px;
+}
+
+.brand-icon {
+  font-size: 24px;
+  color: #1f3a5f;
+}
+
+.brand-name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* İçerik alanı */
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.narrow {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+.hero-text {
+  font-size: 16px;
+}
+
+.note {
+  margin-top: 14px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+
+.legend {
+  margin-top: 16px;
+}
+
+/* Analiz ekranı */
+.analyzing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-top: 24px;
+}
+
+.analyzing .ant-typography {
+  font-family: "Source Serif 4", Georgia, serif;
+  margin: 0;
+}
+
+.analyzing .ant-steps {
+  width: auto;
+}
+
+/* Sonuç ekranı */
+.result-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.result-title {
+  margin: 4px 0 !important;
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+.summary {
+  margin-bottom: 16px;
+}
+
+.bar {
+  display: flex;
+  gap: 2px;
+  height: 10px;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.filter {
+  overflow-x: auto;
+}
+
+.clause {
+  margin-bottom: 6px;
+  padding: 12px 14px !important;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.clause-no {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.clause-sari {
+  background: #fffbf3;
+}
+
+.clause-kirmizi {
+  background: #fff7f6;
+}
+
+.clause:hover {
+  background: #f4f6f9;
+}
+
+.clause.selected {
+  background: #e8eef6;
+}
+
+.clause-text {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(0, 0, 0, 0.78);
+}
+
+.sticky {
+  position: sticky;
+  top: 16px;
+}
+
+/* Detay paneli */
+.full-width {
+  width: 100%;
+}
+
+.section-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.basis {
+  color: #1f3a5f;
+}
+
+.no-margin {
+  margin-bottom: 0 !important;
+}
+
+.quote {
+  margin-bottom: 0 !important;
+  padding-left: 10px;
+  border-left: 3px solid #f0f0f0;
+  font-family: "Source Serif 4", Georgia, serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sample-tag {
+  font-size: 12px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 0 12px;
+  }
+
+  .brand-sub {
+    display: none;
+  }
+}
